@@ -4,8 +4,6 @@ services:
     name: kindred-db
     plan: free
     region: oregon
-    databaseName: kindred_production
-    databaseUser: kindred
 
   # Rails API Web Service
   - type: web
