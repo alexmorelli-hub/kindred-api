@@ -2,13 +2,10 @@ services:
   # PostgreSQL Database
   - type: pserv
     name: kindred-db
-    env: ruby
     plan: free
     region: oregon
-    databases:
-      - name: kindred_production
-        databaseName: kindred_production
-        user: kindred
+    databaseName: kindred_production
+    databaseUser: kindred
 
   # Rails API Web Service
   - type: web
